@@ -192,6 +192,7 @@ use Vendor\Package\SomeNamespace\{
 ~~~
 
 And the following would not be allowed:
+
 ~~~php
 <?php
 
@@ -203,8 +204,8 @@ use Vendor\Package\SomeNamespace\{
 ~~~
 
 When wishing to declare strict types in files containing markup outside PHP
-opening and closing tags MUST, on the first line, include an opening PHP tag,
-the strict types declaration and closing tag.
+opening and closing tags, the declaration MUST be on the first line of the file
+and include an opening PHP tag, the strict types declaration and closing tag.
 
 For example:
 ~~~php
@@ -236,7 +237,7 @@ The term "class" refers to all classes, interfaces, and traits.
 Any closing brace MUST NOT be followed by any comment or statement on the
 same line.
 
-When instantiating a new class, parenthesis MUST always be present even when
+When instantiating a new class, parentheses MUST always be present even when
 there are no arguments passed to the constructor.
 
 ~~~php
@@ -272,9 +273,10 @@ class ClassName extends ParentClass implements \ArrayAccess, \Countable
 }
 ~~~
 
-Lists of `implements` and `extends` MAY be split across multiple lines, where
-each subsequent line is indented once. When doing so, the first item in the
-list MUST be on the next line, and there MUST be only one interface per line.
+Lists of `implements` and, in the case of interfaces, `extends` MAY be split
+across multiple lines, where each subsequent line is indented once. When doing
+so, the first item in the list MUST be on the next line, and there MUST be only
+one interface per line.
 
 ~~~php
 <?php
@@ -312,7 +314,7 @@ class ClassName
 }
 ~~~
 
-Each individual Trait that is imported into a class MUST be included
+Each individual trait that is imported into a class MUST be included
 one-per-line and each inclusion MUST have its own `use` import statement.
 
 ~~~php
@@ -366,16 +368,19 @@ class ClassName
 ~~~
 
 When using the `insteadof` and `as` operators they must be used as follows taking
-note of indentation, spacing and new lines.
+note of indentation, spacing, and new lines.
 
 ~~~php
 <?php
 
 class Talker
 {
-    use A, B, C {
-        B::smallTalk insteadof A;
-        A::bigTalk insteadof C;
+    use A;
+    use B {
+        A::smallTalk insteadof B;
+    }
+    use C {
+        B::bigTalk insteadof C;
         C::mediumTalk as FooBar;
     }
 }
@@ -396,7 +401,9 @@ Property names MUST NOT be prefixed with a single underscore to indicate
 protected or private visibility. That is, an underscore prefix explicitly has
 no meaning.
 
-A property declaration looks like the following.
+There MUST be a space between type declaration and property name.
+
+A property declaration looks like the following:
 
 ~~~php
 <?php
@@ -406,6 +413,7 @@ namespace Vendor\Package;
 class ClassName
 {
     public $foo = null;
+    public static int $bar = 0;
 }
 ~~~
 
@@ -417,7 +425,7 @@ Method names MUST NOT be prefixed with a single underscore to indicate
 protected or private visibility. That is, an underscore prefix explicitly has
 no meaning.
 
-Method and function names MUST NOT be declared with a space after the method name. The
+Method and function names MUST NOT be declared with space after the method name. The
 opening brace MUST go on its own line, and the closing brace MUST go on the
 next line following the body. There MUST NOT be a space after the opening
 parenthesis, and there MUST NOT be a space before the closing parenthesis.
@@ -451,7 +459,7 @@ function fooBarBaz($arg1, &$arg2, $arg3 = [])
 }
 ~~~
 
-### 4.5 Method and function Arguments
+### 4.5 Method and Function Arguments
 
 In the argument list, there MUST NOT be a space before each comma, and there
 MUST be one space after each comma.
@@ -498,9 +506,9 @@ class ClassName
 }
 ~~~
 
-When you have a return type declaration present there MUST be one space after
+When you have a return type declaration present, there MUST be one space after
 the colon followed by the type declaration. The colon and declaration MUST be
-on the same line as the argument list closing parentheses with no spaces between
+on the same line as the argument list closing parenthesis with no spaces between
 the two characters.
 
 ~~~php
@@ -539,12 +547,35 @@ namespace Vendor\Package;
 
 class ReturnTypeVariations
 {
-    public function functionName(?string $arg1, ?int $arg2): ?string
+    public function functionName(?string $arg1, ?int &$arg2): ?string
     {
         return 'foo';
     }
 }
 ~~~
+
+When using the reference operator `&` before an argument, there MUST NOT be
+a space after it, like in the previous example.
+
+There MUST NOT be a space between the variadic three dot operator and the argument
+name:
+
+```php
+public function process(string $algorithm, ...$parts)
+{
+    // processing
+}
+```
+
+When combining both the reference operator and the variadic three dot operator,
+there MUST NOT be any space between the two of them:
+
+```php
+public function process(string $algorithm, &...$parts)
+{
+    // processing
+}
+```
 
 ### 4.6 `abstract`, `final`, and `static`
 
@@ -626,6 +657,7 @@ The general style rules for control structures are as follows:
 - There MUST be one space between the closing parenthesis and the opening
   brace
 - The structure body MUST be indented once
+- The body MUST be on the next line after the opening brace
 - The closing brace MUST be on the next line after the body
 
 The body of each structure MUST be enclosed by braces. This standardizes how
@@ -767,8 +799,7 @@ do {
 
 Expressions in parentheses MAY be split across multiple lines, where each
 subsequent line is indented at least once. When doing so, the first condition
-MUST be on the next line. The closing parenthesis and opening brace MUST be
-placed together on their own line. Boolean operators between conditions MUST
+MUST be on the next line. Boolean operators between conditions MUST
 always be at the beginning or at the end of the line, not a mix of both.
 
 ~~~php
@@ -837,7 +868,7 @@ try {
     // try body
 } catch (FirstThrowableType $e) {
     // catch body
-} catch (OtherThrowableType $e) {
+} catch (OtherThrowableType | AnotherThrowableType $e) {
     // catch body
 } finally {
     // finally body
@@ -846,27 +877,53 @@ try {
 
 ## 6. Operators
 
-All binary and ternary (but not unary) operators MUST be preceded and followed by at least
-one space; multiple spaces MAY be used for readability purpose. This includes all [arithmetic][],
-[comparison][], [assignment][], [bitwise][], [logical][] (excluding `!` which is unary),
-[string concatenation][], [type][] operators, trait operators (`insteadof` and `as`),
-and the single pipe operator (e.g. `ExceptionType1 | ExceptionType2 $e`).
+Style rules for operators are grouped by arity (the number of operands they take).
 
-There MUST NOT be any whitespace between the increment/decrement operators and the variable 
-being incremented/decremented.
+When space is permitted around an operator, multiple spaces MAY be
+used for readability purposes.
 
-Other operators are left undefined.
+All operators not described here are left undefined.
 
-For example:
+### 6.1. Unary operators
 
+The increment/decrement operators MUST NOT have any space between
+the operator and operand.
 ~~~php
-<?php
+$i++;
+++$j;
+~~~
 
+Type casting operators MUST NOT have any space within the parentheses:
+~~~php
+$intValue = (int) $input;
+~~~
+
+### 6.2. Binary operators
+
+All binary [arithmetic][], [comparison][], [assignment][], [bitwise][],
+[logical][], [string][], and [type][] operators MUST be preceded and
+followed by at least one space:
+~~~php
 if ($a === $b) {
     $foo = $bar ?? $a ?? $b;
 } elseif ($a > $b) {
-    $variable = $foo ? 'foo' : 'bar';
+    $foo = $a + $b * $c;
 }
+~~~
+
+### 6.3. Ternary operators
+
+The conditional operator, also known simply as the ternary operator, MUST be
+preceded and followed by at least one space around both the `?`
+and `:` characters:
+~~~php
+$variable = $foo ? 'foo' : 'bar';
+~~~
+
+When the middle operand of the conditional operator is omitted, the operator
+MUST follow the same style rules as other binary [comparison][] operators:
+~~~php
+$variable = $foo ?: 'bar';
 ~~~
 
 ## 7. Closures
@@ -1019,14 +1076,14 @@ $instance = new class extends \Foo implements
 };
 ~~~
 
-[PSR-1]: http://www.php-fig.org/psr/psr-1/
-[PSR-2]: http://www.php-fig.org/psr/psr-2/
+[PSR-1]: https://www.php-fig.org/psr/psr-1/
+[PSR-2]: https://www.php-fig.org/psr/psr-2/
 [keywords]: http://php.net/manual/en/reserved.keywords.php
-[types]: https://secure.php.net/manual/en/reserved.other-reserved-words.php
+[types]: http://php.net/manual/en/reserved.other-reserved-words.php
 [arithmetic]: http://php.net/manual/en/language.operators.arithmetic.php
 [assignment]: http://php.net/manual/en/language.operators.assignment.php
 [comparison]: http://php.net/manual/en/language.operators.comparison.php
 [bitwise]: http://php.net/manual/en/language.operators.bitwise.php
 [logical]: http://php.net/manual/en/language.operators.logical.php
-[string concatenation]: http://php.net/manual/en/language.operators.string.php
+[string]: http://php.net/manual/en/language.operators.string.php
 [type]: http://php.net/manual/en/language.operators.type.php

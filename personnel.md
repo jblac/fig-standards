@@ -6,30 +6,29 @@
 
 | Name                                  | Term                    |
 |---------------------------------------|-------------------------|
-| Margret Staples ([@dead_lugosi])      | 2017-11-12 - 2019-05-31 |
-| Ian Littman ([@iansltx])              | 2018-08-26 - 2020-01-31 |
-| Alessandro Lai ([@AlessandroLai])     | 2017-11-12 - 2020-08-31 |
+| Alessandro Lai ([@AlessandroLai])     | 2017-11-12 - 2022-08-31 |
+| Asmir Mustafic ([@goetas_asmir])      | 2019-05-26 - 2021-05-30 |
+| Buster Neece ([@SlvrEagle23])         | 2020-01-25 - 2022-01-31 |
 
-Feel free to contact the secretaries at info AT php-fig.org. For more information on the secretaries' role, see the [bylaws](http://www.php-fig.org/bylaws/mission-and-structure/#secretaries).
+Feel free to contact the secretaries at info AT php-fig.org. For more information on the secretaries' role, see the [bylaws](https://www.php-fig.org/bylaws/mission-and-structure/#secretaries).
 
 
 ### Core Committee Members
 
 | Name                                  | Term                    |
 |---------------------------------------|-------------------------|
-| Beau Simensen ([@beausimensen])       | 2016-12-24 - 2019-04-30 |
-| Larry Garfield ([@Crell])             | 2016-12-24 - 2019-04-30 |
-| Matthew Weier O'Phinney ([@mwop])     | 2016-12-24 - 2019-04-30 |
-| Sara Golemon ([@SaraMG])              | 2016-12-24 - 2019-04-30 |
-| Cees-Jan Kiewiet ([@WyriHaximus])     | 2016-12-24 - 2020-08-31 |
-| Lukas Kahwe Smith ([@lsmith])         | 2016-12-24 - 2020-08-31 |
-| Samantha Quiñones ([@ieatkillerbees]) | 2016-12-24 - 2020-08-31 |
-| Chris Tankersley ([@dragonmantank])   | 2016-12-24 - 2020-01-31 |
-| Korvin Szanto ([@korvinszanto])       | 2016-12-24 - 2020-01-31 |
-| Stefano Torresi ([@storresi])         | 2016-12-24 - 2020-01-31 |
-| Michael Cullum ([@michaelcullumuk])   | 2018-01-28 - 2020-01-31 |
-| Chuck Burgess ([@ashnazg])            | 2018-08-26 - 2020-08-31 |
-
+| Larry Garfield ([@Crell])             | 2016-12-24 - 2021-05-30 |
+| Matthew Weier O'Phinney ([@mwop])     | 2016-12-24 - 2021-05-30 |
+| Cees-Jan Kiewiet ([@WyriHaximus])     | 2016-12-24 - 2022-08-31 |
+| Chris Tankersley ([@dragonmantank])   | 2016-12-24 - 2022-01-31 |
+| Korvin Szanto ([@korvinszanto])       | 2016-12-24 - 2022-01-31 |
+| Chuck Burgess ([@ashnazg])            | 2018-08-26 - 2022-08-31 |
+| Woody Gilk ([@shadowhand])            | 2019-05-26 - 2021-05-30 |
+| Matteo Beccati ([@mbeccati])          | 2019-05-26 - 2021-05-30 |
+| Enrico Zimuel ([@ezimuel])            | 2020-01-25 - 2022-01-31 |
+| Massimiliano Arione ([@garakkio])     | 2020-01-25 - 2022-01-31 |
+| Ben Edmunds ([@benedmunds])           | 2020-08-31 - 2022-08-31 |
+| _Vacant_                              |                         |
 
 ### Member Projects
 
@@ -46,11 +45,11 @@ Feel free to contact the secretaries at info AT php-fig.org. For more informatio
 | [Icicle]                          | Aaron Piotrowski ([@trowski2002])     |
 | [Jackalope]                       | Lukas Kahwe Smith ([@lsmith])         |
 | [Joomla]                          | Robert Deutz ([@rdeutz])              |
+| [Laminas Project]                 | Matthew Weier O'Phinney ([@mwop])     |
 | [Lithium]                         | Nate Abele ([@nateabele])             |
 | [Magento]                         | Anton Kril ([@AntonKril])             |
 | [PEAR]                            | Chuck Burgess ([@ashnazg])            |
 | [Phalcon]                         | Nikolaos Dimopoulos ([@phalconphp])   |
-| [Phergie]                         | Joe Ferguson ([@joepferguson])        |
 | [Phing]                           | Siad Ardroumli          |
 | [phpBB]                           | Marc Alexander ([@marc1706])          |
 | [phpDocumentor]                   | Mike van Riel ([@mvriel])             |
@@ -67,10 +66,10 @@ Feel free to contact the secretaries at info AT php-fig.org. For more informatio
 | [Stash]                           | Robert Hafner ([@tedivm])             |
 | [Stormpath PHP SDK]               | Brian Retterer ([@bretterer])         |
 | [SugarCRM]                        | Andreas Sandberg ([@yellowandy])      |
+| [TYPO3]                           | Benni Mack ([@bennimack])             |
 | [Flow] and [Neos]                 | Karsten Dambekalns ([@kdambekalns])   |
 | [Wikibase] and [Semantic Media]   | Jeroen De Dauw ([@JeroenDeDauw])      |
 | [Yii framework]                   | Alexander Makarov ([@sam_dark])       |
-| [Zend Framework]                  | Matthew Weier O'Phinney ([@mwop])     |
 | [Zikula]                          | Shefik Macauley ([@shefik_info])      |
 
 
@@ -86,6 +85,8 @@ Feel free to contact the secretaries at info AT php-fig.org. For more informatio
 | Amanda Folson ([@ambassadorawsum])    | 2016-08-28 - 2017-11-12 |
 | Michael Cullum ([@michaelcullumuk])   | 2016-01-31 - 2018-01-31 |
 | Mark Railton ([@railto])              | 2018-01-28 - 2018-06-05 |
+| Margret Staples ([@dead_lugosi])      | 2017-11-12 - 2019-05-31 |
+| Ian Littman ([@iansltx])              | 2018-08-26 - 2020-01-25 |
 
 
 ### Former Core Committee Members
@@ -94,6 +95,12 @@ Feel free to contact the secretaries at info AT php-fig.org. For more informatio
 |---------------------------------------|-------------------------|
 | Graham Hoefer ([@greydnls])           | 2016-12-24 - 2018-01-31 |
 | Gary Hockin ([@GeeH])                 | 2016-12-24 - 2018-04-04 |
+| Lukas Kahwe Smith ([@lsmith])         | 2016-12-24 - 2019-05-26 |
+| Sara Golemon ([@SaraMG])              | 2016-12-24 - 2019-05-26 |
+| Stefano Torresi ([@storresi])         | 2016-12-24 - 2020-01-25 |
+| Samantha Quiñones ([@ieatkillerbees]) | 2016-12-24 - 2020-08-31 |
+| Beau Simensen ([@beausimensen])       | 2016-12-24 - 2020-08-31 |
+| Michael Cullum ([@michaelcullumuk])   | 2018-01-28 - 2020-01-25 |
 
 
 ### Former Member Projects
@@ -107,6 +114,7 @@ Feel free to contact the secretaries at info AT php-fig.org. For more informatio
 | [Guzzle]                                  | Jeremy Lindblom ([@jeremeamia])       |
 | [Laravel]                                 | Taylor Otwell ([@taylorotwell])       |
 | [The League of Extraordinary Packages]    | Graham Hoefer ([@greydnls])           |
+| [Phergie]                                 | Joe Ferguson ([@joepferguson])        |
 | [Propel]                                  | William Durand ([@couac])             |
 | [sabre/dav]                               | Evert Pot ([@evertp])                 |
 | [Symfony]                                 | Fabien Potencier ([@fabpot])          |	
@@ -116,6 +124,8 @@ Feel free to contact the secretaries at info AT php-fig.org. For more informatio
 [@ambassadorawsum]: https://twitter.com/ambassadorawsum
 [@andrerom]: https://twitter.com/andrerom
 [@AntonKril]: https://twitter.com/AntonKril
+[@benedmunds]: https://twitter.com/benedmunds
+[@bennimack]: https://twitter.com/bennimack
 [@ashnazg]: https://twitter.com/ashnazg
 [@beausimensen]: https://twitter.com/beausimensen
 [@bernhard_rusch]: https://twitter.com/bernhard_rusch
@@ -129,8 +139,11 @@ Feel free to contact the secretaries at info AT php-fig.org. For more informatio
 [@drumshaman]: https://twitter.com/drumshaman
 [@dzuelke]: https://twitter.com/dzuelke
 [@evertp]: https://twitter.com/evertp
+[@ezimuel]: https://twitter.com/ezimuel
 [@fabpot]: https://twitter.com/fabpot
+[@garakkio]: https://twitter.com/garakkio
 [@GeeH]: https://twitter.com/GeeH
+[@goetas_asmir]: https://twitter.com/goetas_asmir
 [@greydnls]: https://twitter.com/greydnls
 [@guilhermeblanco]: https://twitter.com/guilhermeblanco
 [@ieatkillerbees]: https://twitter.com/ieatkillerbees
@@ -159,7 +172,9 @@ Feel free to contact the secretaries at info AT php-fig.org. For more informatio
 [@sam_dark]: https://twitter.com/sam_dark
 [@SaraMG]: https://twitter.com/SaraMG
 [@seldaek]: https://twitter.com/seldaek
+[@shadowhand]: https://twitter.com/shadowhand
 [@shefik_info]: https://twitter.com/shefik_info
+[@SlvrEagle23]: https://twitter.com/SlvrEagle23
 [@storresi]: https://twitter.com/storresi
 [@taylorotwell]: https://twitter.com/taylorotwell
 [@tedivm]: https://twitter.com/tedivm
@@ -186,6 +201,7 @@ Feel free to contact the secretaries at info AT php-fig.org. For more informatio
 [Icicle]: https://icicle.io
 [Jackalope]: http://jackalope.github.com
 [Joomla]: http://www.joomla.org
+[Laminas Project]: https://getlaminas.org
 [Laravel]: http://laravel.com
 [Lithium]: http://li3.me
 [Magento]: http://magento.com
@@ -214,8 +230,8 @@ Feel free to contact the secretaries at info AT php-fig.org. For more informatio
 [Stormpath PHP SDK]: http://www.stormpath.com
 [SugarCRM]: http://developers.sugarcrm.com/wordpress
 [Symfony]: http://www.symfony.com
+[TYPO3]: https://typo3.org
 [The League of Extraordinary Packages]: http://thephpleague.com
 [Wikibase]: http://www.wikiba.se
 [Yii framework]: http://www.yiiframework.com
-[Zend Framework]: http://framework.zend.com
 [Zikula]: https://github.com/zikula

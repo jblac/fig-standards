@@ -329,7 +329,7 @@ interface EvolvableLinkProviderInterface extends LinkProviderInterface
     public function withLink(LinkInterface $link);
 
     /**
-     * Returns an instance with the specifed link removed.
+     * Returns an instance with the specified link removed.
      *
      * If the specified link is not present, this method MUST return normally
      * without errors. The link is present if $link is === identical to a link
@@ -342,3 +342,6 @@ interface EvolvableLinkProviderInterface extends LinkProviderInterface
     public function withoutLink(LinkInterface $link);
 }
 ~~~
+
+Since [psr/link version 1.1](https://packagist.org/packages/psr/link#1.1.0), the above interfaces have been updated to add argument type hints.
+Since [psr/link version 2.0](https://packagist.org/packages/psr/link#2.0.0), the above interfaces have been updated to add return type hints.  References to `array|\Traversable` have been replaced with `iterable`.

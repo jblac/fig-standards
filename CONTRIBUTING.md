@@ -2,12 +2,12 @@
 
 Anybody who subscribes to the Google Group, is part of the PHP-FIG. As soon as
 you subscribe to the [mailing list](http://groups.google.com/group/php-fig/)
-and/or join the [IRC channel](http://www.php-fig.org/irc/) you are a PHP-FIG
+and/or join the [IRC channel](https://www.php-fig.org/irc/) you are a PHP-FIG
 Community Member, who can influence standards, make suggestions, give feedback,
 etc. Only PHP-FIG Voting Members can start or participate in votes, but the
 discussion and formation stages involve everyone.
 
-See the [PHP-FIG FAQ](http://www.php-fig.org/faqs/) for more information.
+See the [PHP-FIG FAQ](https://www.php-fig.org/faqs/) for more information.
 
 # Licensing
 
@@ -38,10 +38,10 @@ repositories and to the github organisation.
 
 * Never force push to any branch on a repository in the php-fig organisation
 * All changes must go through pull requests, a commit should never be pushed
-directly (excluding inital commits on new interface/util repositories) to master
+directly (excluding initial commits on new interface/util repositories) to master
 * All pull requests relating to a draft PSR must be approved (with a formal +1
 comment) or merged by the PSR Editor, except in the review phase when the coordinator
-should seek commment from the editor, but merging is at the coordinator's discretion
+should seek comment from the editor, but merging is at the coordinator's discretion
 * You must never merge a pull request that affects any file in the repository
 other than those you are on a working group for; you should request a secretary
 or member of that working group (mention @php-fig/psr-x) do so

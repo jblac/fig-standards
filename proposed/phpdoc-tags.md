@@ -212,7 +212,7 @@ Other "Structural Elements" with a public visibility MAY be listed less
 prominently in generated documentation.
 
 See also the [`@internal`](#55-internal), which MAY be used to hide internal
-API components from generated documentation.
+"Structural Elements" from generated documentation.
 
 #### Examples
 
@@ -637,7 +637,7 @@ The @return tag is used to document the return value of functions or methods.
 #### Description
 
 With the @return tag it is possible to document the return type of a
-function or method. When provided, it MUST contain a "Type" (See Appendix A)
+function or method. When provided, it MUST contain a "Type"
 to indicate what is returned; the description on the other hand is OPTIONAL yet
 RECOMMENDED in case of complicated return structures, such as associative arrays.
 
@@ -921,7 +921,7 @@ The @var tag MUST contain the name of the element it documents. An exception
 to this is when property declarations only refer to a single property. In this
 case the name of the property MAY be omitted.
 
-This is used when compound statements are used to define a series of Constants
+`element_name` is used when compound statements are used to define a series of Constants
 or Properties. Such a compound statement can only have one DocBlock while several
 items are represented.
 
